@@ -1,18 +1,18 @@
-# .github/workflows/test-on-develop.yml
-name: Run Component Tests on Develop PR
+name: Run Tests on PR to Develop
 
 on:
   pull_request:
     branches: [develop]
 
 jobs:
-  cypress-component-tests:
+  test:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup Node
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
@@ -21,4 +21,4 @@ jobs:
         run: npm install
 
       - name: Run Cypress component tests
-        run: npx cypress run --component
+        run: npm cypress run --component

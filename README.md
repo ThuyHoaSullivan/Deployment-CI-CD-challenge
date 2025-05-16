@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 19 CI-CD: GitHub Actions CI/CD Setup
 
 ## Your Task
@@ -141,3 +142,6 @@ You are required to submit BOTH of the following for review:
 ---
 
 © 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+=======
+file readme
+>>>>>>> 9ac1a2cf520ac681ee782eb78675a5e221703da7
